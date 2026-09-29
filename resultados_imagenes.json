@@ -1,0 +1,266 @@
+{
+  "modo": "demo",
+  "modelo": "gemini-3.8-flash",
+  "generado_en_utc": "2026-09-29T08:53:54.613615+00:00",
+  "numero_imagenes": 5,
+  "metricas": {
+    "ocr": 1.0,
+    "descripcion": 1.0,
+    "escena": 1.0,
+    "objetos": 1.0,
+    "media_global": 1.0
+  },
+  "resultados": [
+    {
+      "id": 1,
+      "archivo": "documento_escaneado.jpg",
+      "tipo": "documento escaneado",
+      "tarea_principal": "OCR",
+      "esperado": {
+        "ocr": "FACTURA DEMO Cliente Ana López Empresa Tarraco Tech Fecha 29/09/2026 Concepto Servicio de mantenimiento Subtotal 35,12 EUR IVA 7,38 EUR TOTAL 42,50 EUR Gracias por su confianza",
+        "escena": [
+          "documento",
+          "factura"
+        ],
+        "objetos": [
+          "documento",
+          "texto"
+        ],
+        "conceptos_descripcion": [
+          "factura",
+          "cliente",
+          "total"
+        ]
+      },
+      "resultado": {
+        "ocr_texto": "FACTURA DEMO Cliente Ana López Empresa Tarraco Tech Fecha 29/09/2026 Concepto Servicio de mantenimiento Subtotal 35,12 EUR IVA 7,38 EUR TOTAL 42,50 EUR Gracias por su confianza",
+        "descripcion": "[DEMO] Imagen de documento escaneado con factura, cliente, total.",
+        "escena": "documento",
+        "objetos": [
+          {
+            "nombre": "documento",
+            "cantidad_aproximada": 1
+          },
+          {
+            "nombre": "texto",
+            "cantidad_aproximada": 1
+          }
+        ],
+        "confianza": 0.95
+      },
+      "precision": {
+        "ocr": 1.0,
+        "descripcion": 1.0,
+        "escena": 1.0,
+        "objetos": 1.0
+      }
+    },
+    {
+      "id": 2,
+      "archivo": "calle_urbana.jpg",
+      "tipo": "foto urbana",
+      "tarea_principal": "clasificación de escena y objetos",
+      "esperado": {
+        "ocr": "CENTRO",
+        "escena": [
+          "calle urbana",
+          "ciudad",
+          "urbana"
+        ],
+        "objetos": [
+          "coche",
+          "edificio",
+          "semáforo",
+          "paso de peatones"
+        ],
+        "conceptos_descripcion": [
+          "calle",
+          "coches",
+          "edificios",
+          "semáforo"
+        ]
+      },
+      "resultado": {
+        "ocr_texto": "CENTRO",
+        "descripcion": "[DEMO] Imagen de foto urbana con calle, coches, edificios, semáforo.",
+        "escena": "calle urbana",
+        "objetos": [
+          {
+            "nombre": "coche",
+            "cantidad_aproximada": 1
+          },
+          {
+            "nombre": "edificio",
+            "cantidad_aproximada": 1
+          },
+          {
+            "nombre": "semáforo",
+            "cantidad_aproximada": 1
+          },
+          {
+            "nombre": "paso de peatones",
+            "cantidad_aproximada": 1
+          }
+        ],
+        "confianza": 0.95
+      },
+      "precision": {
+        "ocr": 1.0,
+        "descripcion": 1.0,
+        "escena": 1.0,
+        "objetos": 1.0
+      }
+    },
+    {
+      "id": 3,
+      "archivo": "producto_cafe.jpg",
+      "tipo": "producto",
+      "tarea_principal": "OCR y descripción de producto",
+      "esperado": {
+        "ocr": "CAFÉ SIERRA 100% ARÁBICA 250 g",
+        "escena": [
+          "producto",
+          "producto sobre mesa",
+          "bodegón"
+        ],
+        "objetos": [
+          "bolsa de café",
+          "taza"
+        ],
+        "conceptos_descripcion": [
+          "café",
+          "bolsa",
+          "taza"
+        ]
+      },
+      "resultado": {
+        "ocr_texto": "CAFÉ SIERRA 100% ARÁBICA 250 g",
+        "descripcion": "[DEMO] Imagen de producto con café, bolsa, taza.",
+        "escena": "producto",
+        "objetos": [
+          {
+            "nombre": "bolsa de café",
+            "cantidad_aproximada": 1
+          },
+          {
+            "nombre": "taza",
+            "cantidad_aproximada": 1
+          }
+        ],
+        "confianza": 0.95
+      },
+      "precision": {
+        "ocr": 1.0,
+        "descripcion": 1.0,
+        "escena": 1.0,
+        "objetos": 1.0
+      }
+    },
+    {
+      "id": 4,
+      "archivo": "restaurante.jpg",
+      "tipo": "interior",
+      "tarea_principal": "descripción y detección de objetos",
+      "esperado": {
+        "ocr": "MENÚ",
+        "escena": [
+          "restaurante",
+          "comedor",
+          "interior de restaurante"
+        ],
+        "objetos": [
+          "pizza",
+          "mesa",
+          "vaso",
+          "menú"
+        ],
+        "conceptos_descripcion": [
+          "pizza",
+          "mesa",
+          "restaurante"
+        ]
+      },
+      "resultado": {
+        "ocr_texto": "MENÚ",
+        "descripcion": "[DEMO] Imagen de interior con pizza, mesa, restaurante.",
+        "escena": "restaurante",
+        "objetos": [
+          {
+            "nombre": "pizza",
+            "cantidad_aproximada": 1
+          },
+          {
+            "nombre": "mesa",
+            "cantidad_aproximada": 1
+          },
+          {
+            "nombre": "vaso",
+            "cantidad_aproximada": 1
+          },
+          {
+            "nombre": "menú",
+            "cantidad_aproximada": 1
+          }
+        ],
+        "confianza": 0.95
+      },
+      "precision": {
+        "ocr": 1.0,
+        "descripcion": 1.0,
+        "escena": 1.0,
+        "objetos": 1.0
+      }
+    },
+    {
+      "id": 5,
+      "archivo": "circuito_formula1.jpg",
+      "tipo": "deporte de motor",
+      "tarea_principal": "clasificación de escena y objetos",
+      "esperado": {
+        "ocr": "32 META RACE",
+        "escena": [
+          "circuito",
+          "carrera",
+          "automovilismo",
+          "fórmula 1"
+        ],
+        "objetos": [
+          "coche de carreras",
+          "pista",
+          "grada"
+        ],
+        "conceptos_descripcion": [
+          "coche",
+          "circuito",
+          "carrera"
+        ]
+      },
+      "resultado": {
+        "ocr_texto": "32 META RACE",
+        "descripcion": "[DEMO] Imagen de deporte de motor con coche, circuito, carrera.",
+        "escena": "circuito",
+        "objetos": [
+          {
+            "nombre": "coche de carreras",
+            "cantidad_aproximada": 1
+          },
+          {
+            "nombre": "pista",
+            "cantidad_aproximada": 1
+          },
+          {
+            "nombre": "grada",
+            "cantidad_aproximada": 1
+          }
+        ],
+        "confianza": 0.95
+      },
+      "precision": {
+        "ocr": 1.0,
+        "descripcion": 1.0,
+        "escena": 1.0,
+        "objetos": 1.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,324 @@
+{
+  "modo": "demo",
+  "modelo": "gemini-3.8-flash",
+  "generado_en_utc": "2026-09-29T09:26:58.619588+00:00",
+  "numero_textos": 10,
+  "metricas": {
+    "idioma": 1.0,
+    "sentimiento": 1.0,
+    "entidades_recall": 1.0,
+    "media_global": 1.0,
+    "detalle": {
+      "idioma": "10/10",
+      "sentimiento": "10/10",
+      "entidades": "23/23"
+    }
+  },
+  "resultados": [
+    {
+      "id": 1,
+      "tipo": "noticia",
+      "texto": "Microsoft anunció en Madrid una herramienta de inteligencia artificial para ayudar a pequeñas empresas a automatizar tareas administrativas.",
+      "esperado": {
+        "idioma": "es",
+        "sentimiento": "neutro",
+        "entidades_clave": [
+          "Microsoft",
+          "Madrid"
+        ]
+      },
+      "resultado": {
+        "idioma": "es",
+        "entidades": [
+          {
+            "texto": "Microsoft",
+            "tipo": "entidad"
+          },
+          {
+            "texto": "Madrid",
+            "tipo": "entidad"
+          }
+        ],
+        "sentimiento": "neutro",
+        "confianza": 0.95,
+        "resumen": "[DEMO] Resumen automático del texto 1."
+      }
+    },
+    {
+      "id": 2,
+      "tipo": "reseña",
+      "texto": "El restaurante fue excelente. La comida llegó rápido, el personal fue muy amable y volvería sin dudarlo.",
+      "esperado": {
+        "idioma": "es",
+        "sentimiento": "positivo",
+        "entidades_clave": [
+          "restaurante"
+        ]
+      },
+      "resultado": {
+        "idioma": "es",
+        "entidades": [
+          {
+            "texto": "restaurante",
+            "tipo": "entidad"
+          }
+        ],
+        "sentimiento": "positivo",
+        "confianza": 0.95,
+        "resumen": "[DEMO] Resumen automático del texto 2."
+      }
+    },
+    {
+      "id": 3,
+      "tipo": "email",
+      "texto": "Hola Laura, la reunión con Acme se ha movido al jueves a las 11:00 en Barcelona. Confírmame si puedes asistir.",
+      "esperado": {
+        "idioma": "es",
+        "sentimiento": "neutro",
+        "entidades_clave": [
+          "Laura",
+          "Acme",
+          "Barcelona"
+        ]
+      },
+      "resultado": {
+        "idioma": "es",
+        "entidades": [
+          {
+            "texto": "Laura",
+            "tipo": "entidad"
+          },
+          {
+            "texto": "Acme",
+            "tipo": "entidad"
+          },
+          {
+            "texto": "Barcelona",
+            "tipo": "entidad"
+          }
+        ],
+        "sentimiento": "neutro",
+        "confianza": 0.95,
+        "resumen": "[DEMO] Resumen automático del texto 3."
+      }
+    },
+    {
+      "id": 4,
+      "tipo": "reseña",
+      "texto": "Estoy muy decepcionado con el portátil. Se apaga solo, la batería dura poco y el servicio técnico no resolvió el problema.",
+      "esperado": {
+        "idioma": "es",
+        "sentimiento": "negativo",
+        "entidades_clave": [
+          "portátil",
+          "batería",
+          "servicio técnico"
+        ]
+      },
+      "resultado": {
+        "idioma": "es",
+        "entidades": [
+          {
+            "texto": "portátil",
+            "tipo": "entidad"
+          },
+          {
+            "texto": "batería",
+            "tipo": "entidad"
+          },
+          {
+            "texto": "servicio técnico",
+            "tipo": "entidad"
+          }
+        ],
+        "sentimiento": "negativo",
+        "confianza": 0.95,
+        "resumen": "[DEMO] Resumen automático del texto 4."
+      }
+    },
+    {
+      "id": 5,
+      "tipo": "noticia",
+      "texto": "Renfe informó que el nuevo servicio entre Tarragona y Barcelona comenzará el próximo lunes con cuatro frecuencias diarias.",
+      "esperado": {
+        "idioma": "es",
+        "sentimiento": "neutro",
+        "entidades_clave": [
+          "Renfe",
+          "Tarragona",
+          "Barcelona"
+        ]
+      },
+      "resultado": {
+        "idioma": "es",
+        "entidades": [
+          {
+            "texto": "Renfe",
+            "tipo": "entidad"
+          },
+          {
+            "texto": "Tarragona",
+            "tipo": "entidad"
+          },
+          {
+            "texto": "Barcelona",
+            "tipo": "entidad"
+          }
+        ],
+        "sentimiento": "neutro",
+        "confianza": 0.95,
+        "resumen": "[DEMO] Resumen automático del texto 5."
+      }
+    },
+    {
+      "id": 6,
+      "tipo": "noticia",
+      "texto": "Apple presented a new accessibility feature in London that will be included in a future software update.",
+      "esperado": {
+        "idioma": "en",
+        "sentimiento": "neutro",
+        "entidades_clave": [
+          "Apple",
+          "London"
+        ]
+      },
+      "resultado": {
+        "idioma": "en",
+        "entidades": [
+          {
+            "texto": "Apple",
+            "tipo": "entidad"
+          },
+          {
+            "texto": "London",
+            "tipo": "entidad"
+          }
+        ],
+        "sentimiento": "neutro",
+        "confianza": 0.95,
+        "resumen": "[DEMO] Resumen automático del texto 6."
+      }
+    },
+    {
+      "id": 7,
+      "tipo": "reseña",
+      "texto": "I absolutely love this camera. The image quality is fantastic and the autofocus is fast and reliable.",
+      "esperado": {
+        "idioma": "en",
+        "sentimiento": "positivo",
+        "entidades_clave": [
+          "camera",
+          "autofocus"
+        ]
+      },
+      "resultado": {
+        "idioma": "en",
+        "entidades": [
+          {
+            "texto": "camera",
+            "tipo": "entidad"
+          },
+          {
+            "texto": "autofocus",
+            "tipo": "entidad"
+          }
+        ],
+        "sentimiento": "positivo",
+        "confianza": 0.95,
+        "resumen": "[DEMO] Resumen automático del texto 7."
+      }
+    },
+    {
+      "id": 8,
+      "tipo": "email",
+      "texto": "Hi Daniel, your flight to Paris has been changed to 18:30 on Friday. Please check the airline app for the updated boarding gate.",
+      "esperado": {
+        "idioma": "en",
+        "sentimiento": "neutro",
+        "entidades_clave": [
+          "Daniel",
+          "Paris",
+          "Friday"
+        ]
+      },
+      "resultado": {
+        "idioma": "en",
+        "entidades": [
+          {
+            "texto": "Daniel",
+            "tipo": "entidad"
+          },
+          {
+            "texto": "Paris",
+            "tipo": "entidad"
+          },
+          {
+            "texto": "Friday",
+            "tipo": "entidad"
+          }
+        ],
+        "sentimiento": "neutro",
+        "confianza": 0.95,
+        "resumen": "[DEMO] Resumen automático del texto 8."
+      }
+    },
+    {
+      "id": 9,
+      "tipo": "reseña",
+      "texto": "The delivery was three days late and the box arrived damaged. Customer support was not helpful at all.",
+      "esperado": {
+        "idioma": "en",
+        "sentimiento": "negativo",
+        "entidades_clave": [
+          "delivery",
+          "Customer support"
+        ]
+      },
+      "resultado": {
+        "idioma": "en",
+        "entidades": [
+          {
+            "texto": "delivery",
+            "tipo": "entidad"
+          },
+          {
+            "texto": "Customer support",
+            "tipo": "entidad"
+          }
+        ],
+        "sentimiento": "negativo",
+        "confianza": 0.95,
+        "resumen": "[DEMO] Resumen automático del texto 9."
+      }
+    },
+    {
+      "id": 10,
+      "tipo": "email",
+      "texto": "Gracias por enviar el informe. El contenido está claro y bien organizado, aunque sería útil añadir una gráfica al final.",
+      "esperado": {
+        "idioma": "es",
+        "sentimiento": "positivo",
+        "entidades_clave": [
+          "informe",
+          "gráfica"
+        ]
+      },
+      "resultado": {
+        "idioma": "es",
+        "entidades": [
+          {
+            "texto": "informe",
+            "tipo": "entidad"
+          },
+          {
+            "texto": "gráfica",
+            "tipo": "entidad"
+          }
+        ],
+        "sentimiento": "positivo",
+        "confianza": 0.95,
+        "resumen": "[DEMO] Resumen automático del texto 10."
+      }
+    }
+  ]
+}
